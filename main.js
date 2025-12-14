@@ -1,4 +1,5 @@
 
+
 function startLoader() {
     let counterElement = document.querySelector('.count p');
     let currentValue = 0;
@@ -67,4 +68,20 @@ gsap.to(".loader-2", {
     ease: "power4.inOut",
     duration: 1.5,
     delay: 3.5
+})
+
+gsap.from(".header h1", {
+    y: 200,
+    ease: "power4.inOut",
+    duration: 1.5,
+    delay: 3.75,
+    stagger: 0.05
+})
+
+gsap.to(".img", {
+    clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
+    ease: "power4.inOut",
+    duration: 1.5,
+    delay: 4.5,
+    stagger: 0.25
 })
