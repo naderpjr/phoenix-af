@@ -54,3 +54,17 @@ gsap.to(".loader", {
     duration: 1.5,
     delay: 3.75
 })
+
+gsap.to(".loader-bg", {
+    height: "0",
+    ease: "power4.inOut",
+    duration: 1.5,
+    delay: 4
+})
+
+gsap.to(".loader-2", {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%",
+    ease: "power4.inOut",
+    duration: 1.5,
+    delay: 3.5
+})
