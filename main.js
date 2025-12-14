@@ -40,3 +40,17 @@ anime.timeline({ loop: false })
         duration: 3000,
         delay: (el, i) => 2000 + 30 * i
     })
+
+gsap.to(".pre-loader", {
+    scale: 0.5,
+    ease: "power4.inOut",
+    duration: 2,
+    delay: 3
+})
+
+gsap.to(".loader", {
+    height: "0",
+    ease: "power4.inOut",
+    duration: 1.5,
+    delay: 3.75
+})
