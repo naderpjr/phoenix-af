@@ -93,3 +93,23 @@ setTimeout(() => {
 setTimeout(() => {
     document.querySelector('.loader-content').classList.add('hiden');
 }, 5000);
+
+
+const transition = document.querySelector('.page-transition');
+const links = document.querySelectorAll('a[data-link]');
+
+links.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const target = link.getAttribute('href');
+
+        transition.classList.add('active');
+
+
+        setTimeout(() => {
+            window.location.href = target;
+        }, 1100);
+    });
+});
+
