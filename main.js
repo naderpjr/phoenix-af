@@ -89,3 +89,7 @@ gsap.to(".img", {
 setTimeout(() => {
     document.querySelector('.site-content').classList.add('index');
 }, 6000);
+
+setTimeout(() => {
+    document.querySelector('.loader-content').classList.add('hiden');
+}, 5000);
