@@ -85,3 +85,7 @@ gsap.to(".img", {
     delay: 4.5,
     stagger: 0.25
 })
+
+setTimeout(() => {
+    document.querySelector('.site-content').classList.add('index');
+}, 6000);
