@@ -233,29 +233,6 @@ a {
 }
 
 
-.page-enter {
-    animation: pageIn 3s cubic-bezier(.77, 0, .18, 1) forwards;
-}
-
-@keyframes pageIn {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
-.about-title {
-    display: flex;
-    align-items: center;
-}
-
-.about-title h1 {
-    margin-top: 300px;
-    padding: 20px 50px;
-}
 
 
 @media(max-width: 900px) {
