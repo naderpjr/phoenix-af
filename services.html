@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Phoenix AF</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style-about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="page-loader"></div>
+
+    <section class="page-enter">
+
+
+        <nav>
+            <div class="links">
+                <a href="./index.html" data-link>Home</a>
+                <a href="./services.html" data-link>Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <section class="services-intro">
+            <div class="services-intro-inner">
+                <span class="services-label">Our Services</span>
+                <h1>
+                    High-end digital solutions<br>
+                    for modern brands
+                </h1>
+                <p>
+                    Phoenix AF is a creative digital agency delivering
+                    premium design, development, branding, and growth-focused
+                    digital solutions. We help brands stand out with clarity,
+                    performance, and purpose.
+                </p>
+            </div>
+        </section>
+
+        <section class="services-cards">
+            <div class="swiper mySwiper services-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide service-card">
+                        <span class="service-index">01</span>
+                        <h3>Web Design & Development</h3>
+                        <p>
+                            Custom-designed and hand-coded websites focused
+                            on performance, scalability, and experience.
+                        </p>
+                        <span class="service-meta">HTML • CSS • JavaScript</span>
+                    </div>
+
+                    <div class="swiper-slide service-card">
+                        <span class="service-index">02</span>
+                        <h3>SEO & Website Optimization</h3>
+                        <p>
+                            Technical SEO, clean structure, and performance
+                            optimization to improve visibility and speed.
+                        </p>
+                        <span class="service-meta">SEO • Performance</span>
+                    </div>
+
+                    <div class="swiper-slide service-card">
+                        <span class="service-index">03</span>
+                        <h3>Digital Marketing Strategy</h3>
+                        <p>
+                            Strategic planning to grow brands, increase reach,
+                            and convert audiences effectively.
+                        </p>
+                        <span class="service-meta">Marketing • Strategy</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1.1,
+                spaceBetween: 24,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
+
+    </section>
+
+</body>
+
+</html>

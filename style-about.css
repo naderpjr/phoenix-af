@@ -1,3 +1,8 @@
+body {
+    background-color: aliceblue;
+    overflow-y: scroll;
+}
+
 .page-loader {
     position: fixed;
     inset: 0;
@@ -108,5 +113,103 @@
 
     .about-title {
         margin: 100px 0 80px;
+    }
+}
+
+
+
+.services-intro {
+    transform: translateY(150px);
+
+    padding: 0 6vw;
+}
+
+.services-intro-inner {
+    max-width: 900px;
+}
+
+.services-label {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.services-intro h1 {
+    margin: 24px 0;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.services-intro p {
+    max-width: 560px;
+    font-size: 16px;
+    line-height: 1.9;
+    opacity: 0.8;
+}
+
+.services-cards {
+    margin-top: 169px;
+    padding: 0 6vw 120px;
+}
+
+.services-swiper {
+    width: 100%;
+}
+
+.service-card {
+    margin-top: 10px;
+    background: linear-gradient(145deg, #c4c4c4, #bebebe);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px 36px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.service-index {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    opacity: 0.5;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    opacity: 0.75;
+}
+
+.service-meta {
+    margin-top: auto;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    opacity: 0.5;
+}
+
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .services-intro {
+        transform: translateY(150px);
     }
 }
